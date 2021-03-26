@@ -1,0 +1,79 @@
+# Practice Problem 1 (Easy) | Python Tutorials For Absolute Beginners In Hindi #103
+# The task you have to perform is “Your Age In 2090”. This task consists of a total of 10 points to evaluate your performance.
+#
+# Problem Statement:-
+# Take age or year of birth as an input from the user. Store the input in one variable. Your program should detect whether the entered input is age or year of birth and tell the user when they will turn 100 years old. (5 points).
+#
+# Here are a few instructions that you must have to follow:
+#
+# Do not use any type of modules like DateTime or date utils. (-5 points)
+# Users can optionally provide a year, and your program must tell their age in that particular year. (3points)
+# Your code should handle all sort of errors like:                       (2 points)
+# You are not yet born
+# You seem to be the oldest person alive
+# You can also handle any other errors, if possible!
+
+
+print("Your options are:\n","a:Age\n","b:Date of birth")
+x=input("Enter your choice here:")
+# a="Age"
+# b="Dob"
+
+if x=='a':
+    c=int(input("Enter your age here:"))
+    if c>0:
+        d=c+69
+        print("Your age in 2090 is:",d)
+        h=input("Do you want to know when will you turn 100 type y for yes or n for no:")
+        if h=="y":
+            z=100-c
+            t=2021+z
+            print(" $$ In the year",t,"you become 100 $$")
+            print("If you want to know in which year what's your age\n You just have to enter the year:")
+            h1=int(input("Do you like to continue\nType 1 for yes and 0 for no :"))
+            if h1==1:
+                k=int(input("Enter the year where you want to know your age but year is after 2021:"))
+                if k>=2021:
+                    p=k-2021
+                    g=p+c
+                    print("Your age in the year",k,"is:",g)
+                else:
+                    print("$$ Sorry but you Entered wrong input $$ \n You can try gain but your year is after 2021")
+            else:
+                print(" $$ Thankyou for using this $$\n HAVE A GOOD DAY")
+
+    else:
+        print("$$ You are not yet born $$")
+
+
+elif x=='b':
+    e = int(input("Enter your dob here:"))
+    if e>=1900:
+        f = 2090-e
+        print("Your age in 2090 is:", f)
+        h1 = input("Do you want to know when will you turn 100 type y for yes or n for no:")
+        if h1 == "y":
+            l=2021-e
+            z1 = 100 - l
+            t1 = 2021 + z1
+            print(" $$ In the year", t1, "you become 100 $$")
+            print("If you want to know in which year what's your age\n You just have to enter the year:")
+            h2 = int(input("Do you like to continue\nType 2 for yes and 4 for no :"))
+            if h2==2:
+                k1 = int(input("Enter the year where you want to know your age but year is after 2021:"))
+                if k1 >= 2021:
+                    p1 = k1 - 2021
+                    g1 = p1 + l
+                    print("Your age in the year", k1, "is:", g1)
+                else:
+                    print("$$ Sorry but you Entered wrong input $$ \n You can try gain but your year is after 2021")
+            else:
+                print(" $$ Thankyou for using this $$\n HAVE A GOOD DAY")
+
+
+    else:
+        print("$$You are the oldest person alive$$")
+
+
+
+
